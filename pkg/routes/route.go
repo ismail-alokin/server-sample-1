@@ -9,6 +9,7 @@ func SetupRoutes() *mux.Router {
 	router := mux.NewRouter()
 
 	router.HandleFunc("/api/users", users.GetAllUsersHandler)
+	router.HandleFunc("/api/users/html", users.GetUserHtml)
 	router.HandleFunc("/api/users/{user_id}", users.GetUserHandler)
 
 	return router

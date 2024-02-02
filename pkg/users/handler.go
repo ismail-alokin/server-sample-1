@@ -15,3 +15,8 @@ func GetAllUsersHandler(w http.ResponseWriter, r *http.Request) {
 	log.Println("GetAllUsersHandler")
 	fmt.Fprintf(w, "Getting all users")
 }
+
+func GetUserHtml(w http.ResponseWriter, r *http.Request) {
+	log.Println("GetUserHtml")
+	fmt.Fprintf(w, "Getting ")
+}
